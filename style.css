@@ -1,0 +1,114 @@
+/* ============================================
+   Simple CSS for Pizza Maker
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f0ea;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #c0392b;
+    margin-bottom: 0.5rem;
+}
+
+#studentInfo {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 0.3rem;
+    background: #f0ece6;
+    border-radius: 20px;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.3rem;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 0.2rem;
+}
+
+button {
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e74c3c;
+}
+
+#output {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #eee;
+}
+
+#output h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#orderSummary {
+    background: #f9f5f0;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 50px;
+    border-left: 4px solid #c0392b;
+}
+
+#orderSummary em {
+    color: #888;
+}
