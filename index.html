@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1> The Pizza Maker</h1>
+        <p id="studentInfo"></p>
+
+        <form id="pizzaForm">
+            <!-- Customer Name -->
+            <div>
+                <label>Your Name *</label>
+                <input type="text" id="customerName" required>
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <!-- Pizza Size -->
+            <div>
+                <label>Pizza Size *</label>
+                <select id="pizzaSize" required>
+                    <option value="">Select size</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+                <span class="error" id="sizeError"></span>
+            </div>
+
+            <!-- Crust -->
+            <div>
+                <label>Crust</label>
+                <select id="crust">
+                    <option value="Thin">Thin</option>
+                    <option value="Thick">Thick</option>
+                    <option value="Stuffed">Stuffed</option>
+                </select>
+            </div>
+
+            <!-- Sauce -->
+            <div>
+                <label>Sauce</label>
+                <select id="sauce">
+                    <option value="Tomato">Tomato</option>
+                    <option value="BBQ">BBQ</option>
+                    <option value="Pesto">Pesto</option>
+                </select>
+            </div>
+
+            <!-- Cheese -->
+            <div>
+                <label>Cheese</label>
+                <select id="cheese">
+                    <option value="Regular">Regular</option>
+                    <option value="Extra">Extra</option>
+                    <option value="Double">Double</option>
+                </select>
+            </div>
+
+            <!-- Toppings (checkboxes) -->
+            <div>
+                <label>Toppings</label>
+                <div>
+                    <label><input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</label>
+                    <label><input type="checkbox" name="topping" value="Mushrooms"> Mushrooms</label>
+                    <label><input type="checkbox" name="topping" value="Onions"> Onions</label>
+                    <label><input type="checkbox" name="topping" value="Olives"> Olives</label>
+                </div>
+            </div>
+
+            <!-- Service Type -->
+            <div>
+                <label>Service *</label>
+                <div>
+                    <label><input type="radio" name="service" value="Eat-in" checked> Eat-in</label>
+                    <label><input type="radio" name="service" value="Takeaway"> Takeaway</label>
+                    <label><input type="radio" name="service" value="Delivery"> Delivery</label>
+                </div>
+                <span class="error" id="serviceError"></span>
+            </div>
+
+            <!-- Special Instructions -->
+            <div>
+                <label>Special Instructions</label>
+                <textarea id="instructions" rows="2"></textarea>
+            </div>
+
+            <button type="submit">Order Pizza</button>
+        </form>
+
+        <!-- Output -->
+        <div id="output">
+            <h2>Order Summary</h2>
+            <p id="orderSummary"><em>Place your order to see details</em></p>
+        </div>
+    </div>
+</body>
+</html>
